@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/store/errors.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/store</a> errors.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/20</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Module, ActionTree, MutationTree, GetterTree } from 'vuex';
+import { RootState } from './types';
+&nbsp;
+interface ErrorObj {
+	name: string;
+	date: number;
+}
+&nbsp;
+interface ErrorState {
+	all: ErrorObj[];
+}
+&nbsp;
+const state: ErrorState = <span class="cstat-no" title="statement not covered" >{</span>
+	all: []
+};
+&nbsp;
+const actions: ActionTree&lt;ErrorState, RootState&gt; = <span class="cstat-no" title="statement not covered" >{</span>
+	addError({ commit }, error: ErrorObj) {
+<span class="cstat-no" title="statement not covered" >		commit('addError', error);</span>
+	},
+	deleteError({ commit }, name: string) {
+<span class="cstat-no" title="statement not covered" >		commit('deleteError', name);</span>
+	}
+};
+&nbsp;
+const mutations: MutationTree&lt;ErrorState&gt; = <span class="cstat-no" title="statement not covered" >{</span>
+	addError(state, error: ErrorObj) {
+		const alreadyExists = <span class="cstat-no" title="statement not covered" >state.all.find(<span class="fstat-no" title="function not covered" >(p</span>: ErrorObj) =&gt; <span class="cstat-no" title="statement not covered" >p.name === error.name)</span>;</span>
+<span class="cstat-no" title="statement not covered" >		error.date = Date.now();</span>
+&nbsp;
+		// If already exists, replace with new error
+<span class="cstat-no" title="statement not covered" >		if (alreadyExists) {</span>
+			const index = <span class="cstat-no" title="statement not covered" >state.all.indexOf(alreadyExists);</span>
+<span class="cstat-no" title="statement not covered" >			state.all[index] = error;</span>
+		} else {
+<span class="cstat-no" title="statement not covered" >			state.all.push(error);</span>
+		}
+	},
+	deleteError(state, name: string) {
+		const error = <span class="cstat-no" title="statement not covered" >state.all.find(<span class="fstat-no" title="function not covered" >(p</span>: ErrorObj) =&gt; <span class="cstat-no" title="statement not covered" >p.name === name)</span>;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if (error) {</span>
+<span class="cstat-no" title="statement not covered" >			state.all.splice(state.all.indexOf(error), 1);</span>
+		}
+	}
+};
+&nbsp;
+const getters: GetterTree&lt;ErrorState, RootState&gt; = <span class="cstat-no" title="statement not covered" >{</span>
+	allErrors(state): object[] {
+<span class="cstat-no" title="statement not covered" >		return state.all;</span>
+	},
+	findError: <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(n</span>ame: string): object =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >		return state.all.find(<span class="fstat-no" title="function not covered" >(p</span>: ErrorObj) =&gt; <span class="cstat-no" title="statement not covered" >p.name === name)</span> || {};</span>
+	}
+};
+&nbsp;
+const errors: Module&lt;ErrorState, RootState&gt; = <span class="cstat-no" title="statement not covered" >{</span>
+	state,
+	actions,
+	mutations,
+	getters
+};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >export default errors;</span>
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Nov 21 2018 16:03:00 GMT+0100 (CET)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
